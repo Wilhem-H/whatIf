@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Signika&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  background-color: var(--background_color);
+}
+
+:root {
+  --primary_color: #344d59;
+  --secondary_color: #85054e;
+  --background_color: #fcfcfc;
+  --text_color: #b8cbd0;
+  --primary_font: "Fredericka the Great", cursive;
+}

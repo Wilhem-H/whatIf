@@ -1,0 +1,26 @@
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.article-content-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  gap: 6%;
+}
+
+.article-content-articleId {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.article-content-scenario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

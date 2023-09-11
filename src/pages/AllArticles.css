@@ -1,0 +1,86 @@
+/*------------- all Articles -------------------*/
+
+.allArticles {
+  background-image: url("/background1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-position: center; */
+}
+
+.allArticles-svg {
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "allArticles-svg-interrogationPoint allArticles-svg-monkey"
+    "allArticles-svg-tree allArticles-svg-russia";
+}
+
+.allArticles-Content {
+  /* position: absolute;
+  top: 0; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 3%;
+  opacity: 0.5;
+}
+
+/*------------- svg -------------------*/
+
+.allArticles-svg-interrogationPoint {
+  grid-area: allArticles-svg-interrogationPoint;
+}
+
+.allArticles-svg-monkey {
+  grid-area: allArticles-svg-monkey;
+}
+
+.allArticles-svg-tree {
+  grid-area: allArticles-svg-tree;
+}
+
+.allArticles-svg-russia {
+  grid-area: allArticles-svg-russia;
+}
+
+/*------------- Content -------------------*/
+
+.allArticles-Article {
+  display: flex;
+  min-width: 60vw;
+  height: 20vh;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.3s;
+}
+
+.allArticles-title {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+}
+
+.allArticles-Article img {
+  height: 100%;
+  width: auto;
+  border-radius: 4px 0 0 4px;
+}
+
+.allArticles-Article:hover {
+  cursor: pointer;
+}
+
+.allArticles-title:hover > :not(:hover) {
+  opacity: 0.5;
+}

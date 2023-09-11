@@ -1,0 +1,135 @@
+/*------------- Main Page -------------------*/
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "home-gear home-logo home-monkeyIntPoint"
+    "home-interrogationPoint home-text home-nothing"
+    "home-tree home-button home-russia";
+  max-height: 100vh;
+}
+
+/*------------- Gear -------------------*/
+
+.home-gear {
+  grid-area: home-gear;
+  display: flex;
+}
+
+.home-gear img {
+  height: 26vh;
+  width: auto;
+  margin-top: 5%;
+  margin-left: 5%;
+  transform: rotate(-65deg);
+}
+
+/*------------- Logo -------------------*/
+
+.home-logo {
+  grid-area: home-logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-logo img {
+  height: 35vh;
+  width: auto;
+  max-width: 65%;
+  border-radius: 25px;
+}
+
+/*------------- Monkey -------------------*/
+
+.home-monkeyIntPoint {
+  grid-area: home-monkeyIntPoint;
+  display: flex;
+  align-items: center;
+}
+
+.home-monkeyIntPoint img {
+  height: 30vh;
+  width: auto;
+  margin-top: 20%;
+  margin-left: -8%;
+}
+
+/*------------- Interrogation point -------------------*/
+
+.home-interrogationPoint {
+  grid-area: home-interrogationPoint;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-interrogationPoint img {
+  height: 7vh;
+  margin-right: -25%;
+  margin-top: -20vh;
+}
+
+/*------------- Text -------------------*/
+
+.home-text {
+  grid-area: home-text;
+  font-family: var(--primary_font);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-text h1 {
+  font-weight: 400;
+  margin-bottom: 7%;
+}
+
+.home-text p {
+  margin-bottom: 4%;
+}
+
+/*------------- Nothing -------------------*/
+
+.home-nothing {
+  grid-area: home-nothing;
+}
+
+/*------------- Tree -------------------*/
+
+.home-tree {
+  grid-area: home-tree;
+}
+
+.home-tree img {
+  height: 20vh;
+  margin-top: -5vh;
+  margin-left: 17%;
+}
+
+/*------------- Button -------------------*/
+
+.home-button {
+  grid-area: home-button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*------------- Russia -------------------*/
+
+.home-russia {
+  grid-area: home-russia;
+}
+
+.home-russia img {
+  height: 45vh;
+  margin-top: -25vh;
+  margin-left: 5%;
+}

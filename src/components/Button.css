@@ -1,0 +1,17 @@
+.button button {
+  border: none;
+  padding: 4% 2%;
+  width: 150px;
+  height: 40px;
+  background-color: var(--primary_color);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: filter 0.3s;
+  font-size: 1.1em;
+  color: var(--text_color);
+}
+
+.button button:hover {
+  cursor: pointer;
+  filter: grayscale(30%);
+}
