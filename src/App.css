@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Signika&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Signika:wght@300;400&display=swap");
 
 * {
   box-sizing: border-box;
@@ -14,4 +14,5 @@
   --background_color: #fcfcfc;
   --text_color: #b8cbd0;
   --primary_font: "Fredericka the Great", cursive;
+  --secondary_font: "Signika", sans-serif;
 }

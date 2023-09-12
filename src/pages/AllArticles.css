@@ -1,15 +1,6 @@
 /*------------- all Articles -------------------*/
 
-.allArticles {
-  background-image: url("/background1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* background-position: center; */
-}
-
 .allArticles-svg {
-  background-attachment: fixed;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -19,39 +10,87 @@
   grid-template-areas:
     "allArticles-svg-interrogationPoint allArticles-svg-monkey"
     "allArticles-svg-tree allArticles-svg-russia";
+  width: 100vw;
+  margin: 0;
+  position: fixed;
+}
+
+.allArticles-ContentPage {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 98.5vw;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .allArticles-Content {
-  /* position: absolute;
-  top: 0; */
   display: flex;
   flex-direction: column;
   gap: 1.5em;
   align-items: center;
-  /* justify-content: center; */
   margin-top: 3%;
-  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: var(--secondary_font);
+}
+
+.allArticles-Content:last-child {
+  margin-bottom: 5vh;
 }
 
 /*------------- svg -------------------*/
 
 .allArticles-svg-interrogationPoint {
   grid-area: allArticles-svg-interrogationPoint;
+  display: flex;
+  justify-content: center;
+}
+
+.allArticles-svg-interrogationPoint img {
+  height: 8vh;
+  margin-top: 25vh;
+  margin-right: 34%;
 }
 
 .allArticles-svg-monkey {
   grid-area: allArticles-svg-monkey;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.allArticles-svg-monkey img {
+  height: 35vh;
+  margin-top: 18%;
 }
 
 .allArticles-svg-tree {
   grid-area: allArticles-svg-tree;
+  display: flex;
+  justify-content: center;
+  margin-right: 65%;
+  margin-top: 15%;
+}
+
+.allArticles-svg-tree img {
+  height: 25vh;
 }
 
 .allArticles-svg-russia {
   grid-area: allArticles-svg-russia;
 }
 
+.allArticles-svg-russia img {
+  height: 45vh;
+  margin-top: 4%;
+  margin-left: 20%;
+}
+
 /*------------- Content -------------------*/
+
+.allArticles-Content a {
+  background-color: rgba(255, 255, 255, 0.6);
+}
 
 .allArticles-Article {
   display: flex;
@@ -60,6 +99,7 @@
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .allArticles-title {
@@ -69,6 +109,13 @@
   align-items: center;
   justify-content: center;
   gap: 20%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+}
+
+.allArticles-title p {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: var(--primary_font);
 }
 
 .allArticles-Article img {

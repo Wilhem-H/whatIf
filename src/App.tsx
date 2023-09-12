@@ -8,8 +8,13 @@ export type Article1 = {
   id: number;
   title: string;
   image: string;
+  image2?: string;
   resume: string;
   scenario: string;
+  acteI?: string;
+  acteII?: string;
+  acteIII?: string;
+  conclusion?: string;
 };
 
 export default function App() {
