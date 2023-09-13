@@ -68,11 +68,11 @@ export default function Article() {
               <br />
               <p>{currentArticle.acteI}</p>
               <br />
-              <p>{currentArticle.acteII}</p>
+              <p className="extend">{currentArticle.acteII}</p>
               <br />
-              <p>{currentArticle.acteIII}</p>
+              <p className="extend">{currentArticle.acteIII}</p>
               <br />
-              <p>{currentArticle.conclusion}</p>
+              <p className="extend">{currentArticle.conclusion}</p>
             </div>
             <div className="article-content-scenario-image2">
               <img src={currentArticle.image} />

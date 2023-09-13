@@ -134,6 +134,10 @@
   font-family: var(--secondary_font);
 }
 
+.extend {
+  width: 130%;
+}
+
 /*------------- image 2 -------------------*/
 
 .article-content-scenario-image2 {

@@ -46,8 +46,7 @@ export const articles: Article1[] = [
     title: "Le Règne des Grands Primates ",
     image: "/3.1_apes.png",
     image2: "/3.2_apes.jpg",
-    resume:
-      "Et si les grands primates dominaient le monde à la place des êtres humains ?",
+    resume: "Et si les grands primates dominaient le monde ?",
     scenario: `Dans ce scénario alternatif, nous plongeons dans un monde où les grands primates, tels que les chimpanzés, les gorilles et les orangs-outans, ont évolué pour devenir les dominants de la planète, remplissant le rôle que les êtres humains ont traditionnellement occupé.`,
     acteI: `**Acte I - L'Ascension des Grands Primates :**
     - Après des millions d'années d'évolution, les grands primates ont développé une intelligence et une communication avancées, surpassant celles des êtres humains. Ils ont construit des sociétés complexes basées sur une hiérarchie sociale solide.

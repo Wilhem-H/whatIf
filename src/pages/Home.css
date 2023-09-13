@@ -41,8 +41,18 @@
 .home-logo img {
   height: 35vh;
   width: auto;
+  max-width: 95%;
+  border-radius: 25px;
+}
+
+.home-logo-background {
+  background-color: var(--secondary_color);
   max-width: 65%;
   border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
 }
 
 /*------------- Monkey -------------------*/

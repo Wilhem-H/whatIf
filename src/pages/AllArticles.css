@@ -113,6 +113,10 @@
   color: black;
 }
 
+.allArticles-title h2 {
+  font-weight: 400;
+}
+
 .allArticles-title p {
   background-color: rgba(255, 255, 255, 0.2);
   font-family: var(--primary_font);
