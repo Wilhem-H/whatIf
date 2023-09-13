@@ -38,7 +38,6 @@ export default function Article() {
         </div>
         <div className="article-content">
           <Header />
-          {/* <div className="article-content-articleId">{`article ${id}`}</div> */}
           <div className="article-content-button">
             <Link
               to={`/article/${id - 1}`}
@@ -47,7 +46,7 @@ export default function Article() {
               <Button message="Article précédent" />
             </Link>
             <Link to="/all-articles">
-              <Button message="Menu" />
+              <Button message="Menu" color="color" />
             </Link>
             <Link
               to={`/article/${id + 1}`}
