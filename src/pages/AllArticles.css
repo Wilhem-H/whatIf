@@ -135,3 +135,40 @@
 .allArticles-title:hover > :not(:hover) {
   opacity: 0.5;
 }
+
+/*------------- Media queries -------------------*/
+
+@media screen and (max-width: 950px) {
+  .allArticles-svg {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 0;
+    position: fixed;
+  }
+
+  .allArticles-ContentPage {
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .allArticles-Article {
+    min-width: 100vw;
+  }
+
+  .allArticles-Article img {
+    border-radius: 0;
+  }
+
+  .allArticles-Article {
+    height: 17vh;
+  }
+
+  .allArticles-title h2 {
+    font-size: 1.2em;
+  }
+
+  .allArticles-title p {
+    font-size: 0.75em;
+  }
+}

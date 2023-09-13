@@ -150,3 +150,8 @@
   background-color: transparent;
   border-radius: 5px;
 }
+
+/*------------- media queries -------------------*/
+
+@media screen and (max-width: 950px) {
+}
