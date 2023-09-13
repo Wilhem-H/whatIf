@@ -28,23 +28,23 @@ export default function Home() {
         <img src={interrogationPoint} />
       </div>
       <div className="home-text">
-        <h1>Bienvenue sur : Et si ...? </h1>
+        <h1>Bienvenue sur : " Et si ...? " </h1>
         <p>
           Pour ce projet, je me suis inspiré du concept de la série Disney "What
           if ...?" et de l'intelligence artificielle pour imaginer des scénarios
-          qui décrivent l'état actuel du monde si certains éléments clé de
+          qui décrivent l'état actuel du monde si certains éléments clés de
           l'histoire s'étaient produits différemment.
         </p>
         <p>
-          J'ai conçu moi même les scénarios et j'ai utilisé la puissance de l'IA
-          pour générer les histoires et certaines images. Merci donc à Chat GPT,
-          Crayion et Unsplash pour leurs contributions.
+          J'ai conçu moi-même les scénarios et j'ai utilisé la puissance de l'IA
+          pour générer les histoires ainsi que certaines images. Merci donc à
+          Chat GPT, Crayion et Unsplash pour leurs contributions.
         </p>
       </div>
       <div className="home-nothing"></div>
       <div className="home-button">
         <Link to="/all-articles">
-          <Button message="C'est parti!" />
+          <Button message="C'est parti !" />
         </Link>
       </div>
       <div className="home-russia">

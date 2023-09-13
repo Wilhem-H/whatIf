@@ -38,22 +38,24 @@ export default function Article() {
         </div>
         <div className="article-content">
           <Header />
-          <div className="article-content-button">
-            <Link
-              to={`/article/${id - 1}`}
-              className={id > 1 ? "enable" : "disabled"}
-            >
-              <Button message="Article précédent" />
-            </Link>
-            <Link to="/all-articles">
-              <Button message="Menu" color="color" />
-            </Link>
-            <Link
-              to={`/article/${id + 1}`}
-              className={id < articles.length ? "enable" : "disabled"}
-            >
-              <Button message="Article suivant" />
-            </Link>
+          <div className="article-content-overflow">
+            <div className="article-content-button">
+              <Link
+                to={`/article/${id - 1}`}
+                className={id > 1 ? "enable" : "disabled"}
+              >
+                <Button message="Article précédent" />
+              </Link>
+              <Link to="/all-articles">
+                <Button message="Menu" color="color" />
+              </Link>
+              <Link
+                to={`/article/${id + 1}`}
+                className={id < articles.length ? "enable" : "disabled"}
+              >
+                <Button message="Article suivant" />
+              </Link>
+            </div>
           </div>
 
           <div className="article-content-scenario">

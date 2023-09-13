@@ -144,7 +144,10 @@
     flex-direction: column;
     width: 90vw;
     margin: 0;
-    position: fixed;
+  }
+
+  .allArticles-Content {
+    margin-top: 5vh;
   }
 
   .allArticles-ContentPage {
@@ -170,5 +173,18 @@
 
   .allArticles-title p {
     font-size: 0.75em;
+    text-align: center;
+  }
+
+  .allArticles-svg-interrogationPoint img {
+    margin-right: 54%;
+  }
+
+  .allArticles-svg-monkey img {
+    margin-right: -45%;
+  }
+
+  .allArticles-svg-russia {
+    display: none;
   }
 }

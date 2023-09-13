@@ -53,6 +53,7 @@
   justify-content: center;
   align-items: center;
   padding: 5px;
+  box-shadow: 0px 7px 29px 0px rgba(0, 0, 0, 0.2);
 }
 
 /*------------- Monkey -------------------*/
@@ -142,4 +143,64 @@
   height: 45vh;
   margin-top: -25vh;
   margin-left: 5%;
+}
+
+/*------------- Media queries -------------------*/
+
+@media screen and (max-width: 950px) {
+  .home-gear,
+  .home-interrogationPoint,
+  .home-nothing,
+  .home-russia,
+  .home-tree {
+    display: none;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .home-logo-background,
+  .home-logo-background img {
+    border-radius: 0;
+  }
+
+  .home-monkeyIntPoint {
+    margin-top: 62vh;
+  }
+
+  .home-monkeyIntPoint img {
+    margin-right: -25vw;
+  }
+
+  .home-logo {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 0;
+  }
+
+  .home-text {
+    position: absolute;
+    top: 42vh;
+    background-color: transparent;
+    padding: 1%;
+  }
+
+  .home-text p {
+    background-color: transparent;
+  }
+
+  .home-button {
+    position: absolute;
+    bottom: 3vh;
+  }
+
+  .home-text p {
+    font-size: 0.9em;
+  }
 }

@@ -79,6 +79,11 @@
 }
 
 /*------------- Button -------------------*/
+
+.article-content-overflow {
+  background-color: transparent;
+}
+
 .disabled {
   pointer-events: none;
   opacity: 0.5;
@@ -112,6 +117,7 @@
   margin: 2% 5vw 10vh 5vw;
   padding: 5px;
   border-radius: 5px;
+  box-shadow: 0px 7px 29px 0px rgba(0, 0, 0, 0.2);
 }
 
 .article-content-scenarioOfArticle {
@@ -154,4 +160,69 @@
 /*------------- media queries -------------------*/
 
 @media screen and (max-width: 950px) {
+  .article-background {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+  }
+
+  .article-content {
+    width: 100vw;
+  }
+
+  .article-content-button {
+    margin: 2vh 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 110vw;
+  }
+
+  .article-content-overflow {
+    overflow-x: auto;
+  }
+
+  .button {
+    display: flex;
+    width: 100%;
+  }
+
+  .article-content-scenario-image1 {
+    display: none;
+  }
+
+  .article-content-scenario {
+    flex-direction: column;
+    margin: 5vh 0;
+  }
+
+  .article-content-scenario-image2 {
+    position: initial;
+    margin: 0;
+    order: -1;
+  }
+
+  .article-content-scenario-image2 img {
+    width: 35vw;
+  }
+
+  .article-content-scenarioOfArticle {
+    width: 100%;
+  }
+
+  .article-content-scenarioOfArticle > * {
+    margin-top: 3vh;
+  }
+
+  .extend {
+    width: 100%;
+  }
+
+  .article-svg-monkey img {
+    margin-right: -26vw;
+  }
+
+  .article-svg-interrogationPoint img {
+    margin-left: -69vw;
+  }
 }
