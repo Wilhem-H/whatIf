@@ -17,9 +17,7 @@ export default function Home() {
         <img src={gear} />
       </div>
       <div className="home-logo">
-        <div className="home-logo-background">
-          <img src={logo1} />
-        </div>
+        <img src={logo1} />
       </div>
       <div className="home-monkeyIntPoint">
         <img src={monkeyIntPoint} />

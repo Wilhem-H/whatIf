@@ -4,11 +4,12 @@
   align-items: center;
   margin: 1% 0.5%;
   border-radius: 10px;
+  padding: 1% 0;
 }
 
 .header img {
   height: auto;
-  width: 7%;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -20,6 +21,14 @@
   font-size: 2.7em;
 }
 
+.header a {
+  background-color: transparent;
+  height: auto;
+  width: 7%;
+  border-radius: 10px;
+  margin-left: 5%;
+}
+
 /* ------------- Media Query ---------------*/
 
 @media screen and (max-width: 950px) {
@@ -29,6 +38,10 @@
   }
 
   .header img {
+    border-radius: 0;
+  }
+
+  .header a {
     height: auto;
     width: 17%;
     border-radius: 0;

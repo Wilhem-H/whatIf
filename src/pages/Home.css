@@ -36,17 +36,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .home-logo img {
-  height: 35vh;
+  height: 38vh;
   width: auto;
   max-width: 95%;
   border-radius: 25px;
+  border: solid 10px var(--secondary_color);
+  box-shadow: 0px 7px 29px 0px rgba(0, 0, 0, 0.2);
 }
 
-.home-logo-background {
-  background-color: var(--secondary_color);
+/* .home-logo-background {
+  background-color: transparent;
   max-width: 65%;
   border-radius: 25px;
   display: flex;
@@ -54,7 +57,7 @@
   align-items: center;
   padding: 5px;
   box-shadow: 0px 7px 29px 0px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /*------------- Monkey -------------------*/
 
@@ -147,7 +150,7 @@
 
 /*------------- Media queries -------------------*/
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1100px) {
   .home-gear,
   .home-interrogationPoint,
   .home-nothing,
@@ -163,9 +166,10 @@
     align-items: center;
     height: 100vh;
   }
+}
 
-  .home-logo-background,
-  .home-logo-background img {
+@media screen and (max-width: 950px) {
+  .home-logo img {
     border-radius: 0;
   }
 
