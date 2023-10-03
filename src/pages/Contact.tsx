@@ -4,13 +4,9 @@ import { Button } from "../components/Button";
 import { Header } from "../components/Header";
 
 import cat from "/contact/cat.jpg";
-import aquatic from "/contact/aquatic.jpg";
 import eclipse3 from "/contact/eclipse3.jpg";
-import eclipse6 from "/contact/eclipse6.jpg";
 import eclipse7 from "/contact/eclipse7.jpg";
 import france from "/contact/france.jpg";
-import internet from "/contact/internet.jpg";
-import plant1 from "/contact/plant1.jpg";
 import poutine from "/contact/poutine.jpg";
 
 import TextField from "@mui/material/TextField";
@@ -26,17 +22,7 @@ export default function Contact() {
     details: "",
   });
 
-  const randomImg = [
-    cat,
-    france,
-    eclipse3,
-    // eclipse6,
-    eclipse7,
-    // aquatic,
-    // internet,
-    // plant1,
-    poutine,
-  ];
+  const randomImg = [cat, france, eclipse3, eclipse7, poutine];
   const randomNumber = Math.floor(Math.random() * randomImg.length);
   const randomImage = randomImg[randomNumber];
 
