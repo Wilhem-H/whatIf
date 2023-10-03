@@ -34,7 +34,7 @@ export default function Home() {
           l'histoire s'étaient produits différemment.
         </p>
         <p>
-          J'ai conçu moi-même les scénarios et j'ai utilisé la puissance de l'IA
+          J'ai moi-même conçu les scénarios et j'ai utilisé la puissance de l'IA
           pour générer les histoires ainsi que certaines images. Merci donc à
           Chat GPT, Crayion et Unsplash pour leurs contributions.
         </p>

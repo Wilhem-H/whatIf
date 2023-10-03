@@ -30,11 +30,11 @@ export default function Contact() {
     cat,
     france,
     eclipse3,
-    eclipse6,
+    // eclipse6,
     eclipse7,
-    aquatic,
-    internet,
-    plant1,
+    // aquatic,
+    // internet,
+    // plant1,
     poutine,
   ];
   const randomNumber = Math.floor(Math.random() * randomImg.length);
