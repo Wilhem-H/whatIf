@@ -5,6 +5,7 @@
   margin: 1% 0.5%;
   border-radius: 10px;
   padding: 1% 0;
+  font-family: var(--secondary_font);
 }
 
 .header img {
@@ -14,7 +15,7 @@
 }
 
 .header h1 {
-  width: calc(80% - 20px);
+  width: calc(65% - 20px);
   margin-left: 12%;
   color: var(--text_color);
   background-color: var(--primary_color);
@@ -24,9 +25,42 @@
 .header a {
   background-color: transparent;
   height: auto;
-  width: 5%;
+}
+
+.header a:first-child {
   border-radius: 10px;
   margin-left: 5%;
+  width: 5%;
+}
+
+.header-button {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary_color);
+}
+
+.header-button button {
+  border: none;
+  border-radius: 10px;
+  font-size: 2em;
+  padding: 5% 15%;
+  color: var(--secondary_color);
+  transition: 0.3s;
+}
+
+.header-button button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header-button p {
+  background-color: transparent;
+  font-weight: 700;
 }
 
 /* ------------- Media Query ---------------*/
@@ -41,14 +75,36 @@
     border-radius: 0;
   }
 
-  .header a {
+  .header a:first-child {
     height: auto;
-    width: 17%;
+    width: 30%;
     border-radius: 0;
   }
 
+  .header a {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .header h1 {
-    margin-left: 15%;
+    margin-left: 10%;
     font-size: 2.4em;
+    width: 55%;
+  }
+
+  .header-button {
+    width: 100%;
+  }
+
+  .header-button button {
+    font-size: 1.5em;
+  }
+
+  .header-button p {
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
   }
 }

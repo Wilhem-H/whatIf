@@ -11,6 +11,13 @@ export function Header() {
       </Link>
 
       <h1>Et si ...?</h1>
+
+      <Link to="/contact">
+        <div className="header-button">
+          <button>+</button>
+          <p>Proposer une idée</p>
+        </div>
+      </Link>
     </div>
   );
 }
