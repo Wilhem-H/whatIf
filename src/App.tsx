@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import AllArticles from "./pages/AllArticles";
 import Article from "./pages/Articles";
 import Contact from "./pages/Contact";
-import { Footer } from "./components/Footer";
+import { Footer } from "./components/Footer.tsx";
 
 import "./App.css";
 
