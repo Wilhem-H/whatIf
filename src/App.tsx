@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import Home from "./pages/Home";
 import AllArticles from "./pages/AllArticles";
 import Article from "./pages/Articles";
@@ -31,6 +34,7 @@ export default function App() {
           <Route path="/article/:id" element={<Article />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <ToastContainer />
       </Router>
       <Footer />
     </>

@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../components/Button";
 import { Header } from "../components/Header";
 
@@ -10,10 +10,12 @@ import france from "/contact/france.jpg";
 import poutine from "/contact/poutine.jpg";
 
 import TextField from "@mui/material/TextField";
+import { toast } from "react-toastify";
 
 import "./Contact.css";
 
 export default function Contact() {
+  const navigate = useNavigate();
   const [message, setMessage] = useState({
     firstName: "",
     lastName: "",
@@ -36,7 +38,17 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(message);
+    toast.info("Nous avons bien reçu votre suggestion ", {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+    navigate("/all-articles");
   };
 
   return (
@@ -57,7 +69,7 @@ export default function Contact() {
           <form onSubmit={handleSubmit}>
             <TextField
               fullWidth
-              label="firstName*"
+              label="Nom*"
               id="firstName"
               name="firstName"
               value={message.firstName}
