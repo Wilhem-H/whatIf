@@ -1,4 +1,8 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import { Button } from "../components/Button";
 import logo1 from "/logo1.png";
@@ -11,19 +15,23 @@ import russia from "/russia.svg";
 import "./Home.css";
 
 export default function Home() {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
     <div className="home">
       <div className="home-gear">
-        <img src={gear} />
+        <img src={gear} alt="image d'engrenage" />
       </div>
       <div className="home-logo">
-        <img src={logo1} />
+        <img src={logo1} alt="Logo du site" data-aos="zoom-in" />
       </div>
       <div className="home-monkeyIntPoint">
-        <img src={monkeyIntPoint} />
+        <img src={monkeyIntPoint} alt="image d'un singe" />
       </div>
       <div className="home-interrogationPoint">
-        <img src={interrogationPoint} />
+        <img src={interrogationPoint} alt="image d'un point d'interrogation" />
       </div>
       <div className="home-text">
         <h1>Bienvenue sur : " Et si ...? " </h1>
