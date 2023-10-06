@@ -5,7 +5,6 @@
   margin: 0;
   text-decoration: none;
   list-style-type: none;
-  background-color: var(--background_color);
 }
 
 :root {
@@ -15,4 +14,14 @@
   --text_color: #b8cbd0;
   --primary_font: "Fredericka the Great", cursive;
   --secondary_font: "Signika", sans-serif;
+}
+
+.on {
+  font-size: 0.9em;
+  color: red;
+  font-weight: 500;
+}
+
+.off {
+  display: none;
 }

@@ -12,6 +12,7 @@
     "home-interrogationPoint home-text home-nothing"
     "home-tree home-button home-russia";
   max-height: 100vh;
+  background-color: var(--background_color);
 }
 
 /*------------- Gear -------------------*/

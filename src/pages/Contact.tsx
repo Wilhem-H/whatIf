@@ -14,8 +14,13 @@ import { toast } from "react-toastify";
 
 import "./Contact.css";
 
+const randomImg = [cat, france, eclipse3, eclipse7, poutine];
+const randomNumber = Math.floor(Math.random() * randomImg.length);
+const randomImage = randomImg[randomNumber];
+
 export default function Contact() {
   const navigate = useNavigate();
+  const [error, setError] = useState(false);
   const [message, setMessage] = useState({
     firstName: "",
     lastName: "",
@@ -23,10 +28,6 @@ export default function Contact() {
     scenario: "",
     details: "",
   });
-
-  const randomImg = [cat, france, eclipse3, eclipse7, poutine];
-  const randomNumber = Math.floor(Math.random() * randomImg.length);
-  const randomImage = randomImg[randomNumber];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -38,17 +39,21 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast.info("Nous avons bien reçu votre suggestion ", {
-      position: "top-right",
-      autoClose: 2000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-    });
-    navigate("/all-articles");
+    if (!message.scenario || !message.lastName || !message.mail) {
+      setError(true);
+    } else {
+      toast.info("Nous avons bien reçu votre suggestion ", {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      navigate("/all-articles");
+    }
   };
 
   return (
@@ -66,10 +71,14 @@ export default function Contact() {
         <div className="contact-content-form">
           <h3>Vous avez une idée de scénario à proposer ?</h3>
           <h3>CONTACTEZ NOUS!</h3>
+
+          <p className={error ? "on" : "off"}>
+            les champs avec une * sont obligatoires
+          </p>
           <form onSubmit={handleSubmit}>
             <TextField
               fullWidth
-              label="Nom*"
+              label="Nom"
               id="firstName"
               name="firstName"
               value={message.firstName}
@@ -88,6 +97,7 @@ export default function Contact() {
               label="Mail*"
               id="mail"
               name="mail"
+              type="email"
               value={message.mail}
               onChange={handleInputChange}
             />
